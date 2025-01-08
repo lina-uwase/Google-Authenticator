@@ -1,4 +1,4 @@
- Google Authenticator 2FA Node.js Backend
+# Google Authenticator 2FA Node.js Backend
 
 This project implements a backend for enabling Google Authenticator-based Two-Factor Authentication (2FA) using Node.js, Express, and Prisma.
 
