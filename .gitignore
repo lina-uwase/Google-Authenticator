@@ -1,0 +1,25 @@
+# Node modules
+/node_modules/
+
+# Frontend folder (only if you don't want to push it)
+frontend/
+
+# Prisma migrations (optional: you may want to include schema, but not migrations or generated files)
+/prisma/migrations/
+/prisma/dev.db
+/.env
+
+# Logs
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IDEs (e.g., VSCode, JetBrains)
+.vscode/
+/.idea/
+
+# NPM or Yarn lock files (if you want to ignore them)
+# package-lock.json
+# yarn.lock

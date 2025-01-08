@@ -1,0 +1,25 @@
+// This is your Prisma schema file, 
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+// Generate Prisma Client
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Define your database connection
+datasource db {
+  provider = "postgresql"   // Change this if you're using a different DB
+  url      = env("DATABASE_URL") // Use the URL from your .env file
+}
+
+// Define the User model with necessary columns
+model User {
+  id               Int      @id @default(autoincrement())  // Auto-incrementing ID field
+  username         String   @unique                        // Unique username
+  password         String   // Password field
+  twoFactorSecret  String?  // Optional field for storing the secret
+  twoFactorEnabled Boolean  @default(false)                // Default to 'false' for 2FA enabled/disabled
+  createdAt        DateTime @default(now())               // Automatically set the creation timestamp
+  updatedAt        DateTime @updatedAt                    // Automatically set the update timestamp
+
+  
+}
