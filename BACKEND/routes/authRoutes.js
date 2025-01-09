@@ -3,7 +3,6 @@ import { signup, login, enable2FA, verify2FA } from '../controllers/authControll
 
 const router = express.Router();
 
-// Define routes and map them to controller functions
 router.post('/signup', signup);        
 router.post('/login', login);            
 router.post('/enable-2fa', enable2FA);   
