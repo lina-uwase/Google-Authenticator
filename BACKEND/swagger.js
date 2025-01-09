@@ -2,7 +2,7 @@ import swaggerJSDoc from 'swagger-jsdoc';
 import { fileURLToPath } from 'url';
 import { dirname, resolve } from 'path';
 
-// Resolve the directory path for ES Modules
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
